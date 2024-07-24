@@ -8,7 +8,5 @@ CREATE TABLE trips(
 	id SERIAL PRIMARY KEY,
 	city VARCHAR(256),
 	startDate VARCHAR(256),
-	endDate VARCHAR(256),
-	user_id INTEGER,
-	FOREIGN KEY (user_id) REFERENCES person(id)
+	endDate VARCHAR(256)	
 );

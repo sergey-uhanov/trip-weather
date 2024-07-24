@@ -10,7 +10,7 @@ class TripController {
 	}
 	async getTrips(req, res) {
 		const id = req.query.id
-		const trips = await db.query('SELECT * FROM trips WHERE user_id = $1', [id])
+		const trips = await db.query('SELECT * FROM trips ')
 		res.json(trips.rows)
 	}
 	async deleteTrip(req, res) {
