@@ -1,0 +1,31 @@
+.sliderWrapper {
+	max-width: 800px;
+}
+.searchInputWrapper {
+	position: relative;
+	margin-bottom: 40px;
+}
+.searchInput {
+	border: 0;
+	width: 300px;
+	background: #78e3fe53;
+	padding-left: 40px;
+	cursor: pointer;
+	outline: 1px solid rgba(0, 0, 255, 0.253);
+}
+
+.searchInputWrapper span {
+	position: absolute;
+	top: 5px;
+	left: 0px;
+}
+@media (max-width: 1024px) {
+	.sliderWrapper {
+		width: 586px;
+	}
+}
+@media (max-width: 768px) {
+	.sliderWrapper {
+		width: 424px;
+	}
+}

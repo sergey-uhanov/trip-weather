@@ -1,0 +1,107 @@
+.sideBaner {
+	background: rgb(31, 23, 61);
+	background: linear-gradient(
+		180deg,
+		rgba(31, 23, 61, 1) 44%,
+		rgba(32, 0, 154, 1) 100%
+	);
+	width: 400px;
+	padding: 150px 0 150px 0;
+	color: antiquewhite;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 20px;
+	position: relative;
+}
+
+.day {
+	font-size: 30px;
+	font-weight: bold;
+}
+.weatherСonditions {
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
+.weatherIcon {
+	width: 65px;
+	position: absolute;
+	left: -72px;
+	top: 10px;
+}
+.temp {
+	font-size: 40px;
+	position: relative;
+}
+.temp::after {
+	content: '°C';
+	position: absolute;
+	font-size: 15px;
+}
+.city {
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 100px;
+}
+.city::first-letter {
+	text-transform: uppercase;
+}
+.countdown {
+	list-style-type: none;
+	display: flex;
+	gap: 40px;
+}
+li {
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: bold;
+}
+.countdown li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+li span {
+	font-size: 12px;
+	font-weight: 200;
+}
+
+.cloud {
+	position: absolute;
+	left: 100%; /* Исходное положение иконки */
+	animation: moveLeft 17s linear infinite; /* Анимация движения влево */
+}
+.cloud1 {
+	top: 10%;
+
+	animation: moveLeft 15s linear infinite;
+	animation-delay: 5s;
+}
+.cloud2 {
+	top: 40%;
+
+	animation: moveLeft 13s linear infinite;
+	animation-delay: 3s;
+}
+.cloud3 {
+	top: 50%;
+
+	animation: moveLeft 17s linear infinite;
+	animation-delay: 4s;
+}
+.cloud4 {
+	top: 20%;
+
+	animation: moveLeft 14s linear infinite;
+	animation-delay: 0s;
+}
+/* Определяем анимацию движения влево */
+@keyframes moveLeft {
+	0% {
+		left: 100%; /* Начальное положение */
+	}
+	100% {
+		left: -50%; /* Положение влево (на 100% ширины иконки) */
+	}
+}

@@ -1,0 +1,22 @@
+.wrapper h3 {
+	color: rgb(121, 121, 121);
+}
+.cardWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 540px;
+	gap: 20px;
+	font-size: 10px;
+	color: rgb(105, 105, 104);
+}
+.card {
+	width: 60px;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.icon {
+	width: 30px;
+}

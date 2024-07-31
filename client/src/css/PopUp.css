@@ -1,0 +1,128 @@
+.display-block {
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #00000096;
+	z-index: 10;
+}
+.display-none {
+	display: none;
+}
+.pop-up-container {
+	width: 800px;
+	background-color: rgb(255, 255, 255);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform-origin: center;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+}
+
+.modal-main {
+	padding: 0 40px;
+}
+.close-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.cross {
+	width: 25px;
+	height: 25px;
+	transform: rotate(45deg);
+	position: relative;
+	top: 0;
+	right: 0;
+	margin: 10px 20px;
+}
+
+.cross span {
+	position: absolute;
+	background-color: rgb(137, 137, 137); /* цвет крестика */
+}
+
+.horizontal {
+	width: 100%;
+	height: 2px; /* толщина горизонтального элемента */
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.vertical {
+	height: 100%;
+	width: 2px; /* толщина вертикального элемента */
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+}
+
+.header-pop-up {
+	display: flex;
+	justify-content: space-between;
+	color: rgb(68, 68, 68);
+	margin: 25px 0 45px 0;
+}
+.redSign {
+	color: red;
+}
+.input-block {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	font-weight: 500;
+}
+.input-block select {
+	background: none;
+	border: 1px solid #c6c6c6;
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	padding: 10px 15px;
+	font-size: 1rem;
+	color: #5f5e5e;
+}
+.input-block select:focus {
+	outline: 0;
+	border-color: #3ca6f7;
+}
+
+#citySelect option:not(:first-of-type):checked {
+	color: #800909; /* Цвет текста выбранного элемента */
+}
+input {
+	width: 100%;
+	padding: 10px 15px;
+	font-size: 1rem;
+	color: #5f5e5e;
+	border: 1px solid #c6c6c6;
+
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+.input-block label {
+	margin-bottom: 20px;
+}
+.blok-btn {
+	margin: 50px 0 50px 0;
+	display: flex;
+	justify-content: flex-end;
+	column-gap: 20px;
+}
+.btn {
+	padding: 10px 20px;
+	border: none;
+	background-color: transparent;
+}
+.cencel-btn {
+	margin-right: 20px;
+}
+.save-btn {
+	color: #ebebeb;
+	background-color: rgb(44, 125, 246);
+}
